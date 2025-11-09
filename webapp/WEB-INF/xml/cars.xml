@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cars>
+            
+    
+    <car id="C101">
+                        
+        
+        <brand>Toyota</brand>
+                        
+        
+        <model>Innova</model>
+                        
+        
+        <type>SUV</type>
+                        
+        
+        <rentPerDay>2500</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C101.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C102">
+                        
+        
+        <brand>Hyundai</brand>
+                        
+        
+        <model>i20</model>
+                        
+        
+        <type>Hatchback</type>
+                        
+        
+        <rentPerDay>1800</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C102.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C103">
+                        
+        
+        <brand>Honda</brand>
+                        
+        
+        <model>City</model>
+                        
+        
+        <type>Sedan</type>
+                        
+        
+        <rentPerDay>2200</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C103.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C104">
+                        
+        
+        <brand>Tata</brand>
+                        
+        
+        <model>Nexon</model>
+                        
+        
+        <type>SUV</type>
+                        
+        
+        <rentPerDay>2100</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C104.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C105">
+                        
+        
+        <brand>Kia</brand>
+                        
+        
+        <model>Sonet</model>
+                        
+        
+        <type>SUV</type>
+                        
+        
+        <rentPerDay>2400</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C105.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C106">
+                        
+        
+        <brand>Toyota</brand>
+                        
+        
+        <model>Fortuner</model>
+                        
+        
+        <type>Luxury SUV</type>
+                        
+        
+        <rentPerDay>4000</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C106.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C107">
+                        
+        
+        <brand>Mahindra</brand>
+                        
+        
+        <model>XUV700</model>
+                        
+        
+        <type>SUV</type>
+                        
+        
+        <rentPerDay>3500</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C107.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C108">
+                        
+        
+        <brand>Maruti</brand>
+                        
+        
+        <model>Baleno</model>
+                        
+        
+        <type>Hatchback</type>
+                        
+        
+        <rentPerDay>1300</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C108.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C109">
+                        
+        
+        <brand>Mahindra</brand>
+                        
+        
+        <model>Scorpio</model>
+                        
+        
+        <type>SUV</type>
+                        
+        
+        <rentPerDay>2700</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C109.jpeg</image>
+                    
+    
+    </car>
+            
+    
+    <car id="C110">
+                        
+        
+        <brand>Toyota</brand>
+                        
+        
+        <model>Innova Crysta</model>
+                        
+        
+        <type>MPV</type>
+                        
+        
+        <rentPerDay>3000</rentPerDay>
+                        
+        
+        <availability>true</availability>
+                        
+        
+        <image>C110.jpeg</image>
+                    
+    
+    </car>
+        
+
+</cars>

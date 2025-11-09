@@ -1,0 +1,39 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>CarRentalSystem</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>CarListServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.CarListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CarListServlet</servlet-name>
+        <url-pattern>/viewCars</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RentCarServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.RentCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RentCarServlet</servlet-name>
+        <url-pattern>/rentCar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.carrental.servlet.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+</web-app>

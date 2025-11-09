@@ -1,0 +1,61 @@
+# .gitignore for CarRentalSystem
+# Ignore compiled classes, build artifacts and archives
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Build folders
+target/
+out/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Tomcat / servlet container generated files
+WEB-INF/classes/
+work/
+temp/
+
+# Local environment / secrets
+*.keystore
+*.jks
+.env
+
+# Node / tooling
+node_modules/
+
+# Runtime XML data (don't commit user booking data)
+/webapp/WEB-INF/xml/rentals.xml
+
+# Images and config are included in repo, but if you want to ignore them add rules here
+# For example: /webapp/images/*.png
+
+# Ignore IDE run config files
+*.launch
+
+# Misc
+dist/
+
+# End of file
+
