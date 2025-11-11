@@ -28,8 +28,8 @@ public class AdminServlet extends HttpServlet {
     public void init() {
         // Use explicit credentials defined in the servlet for quick testing.
         // NOTE: For production, store credentials securely (database or env/config), not in source.
-        adminUsername = "Adnan";
-        adminPassword = "Adnan@123";
+        adminUsername = "Tahseen";
+        adminPassword = "Tahseen@123";
     }
 
     @Override

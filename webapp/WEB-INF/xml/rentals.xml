@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <rentals>
+                                        
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    
+    
+    <rental>
                         
+        
+        <carId>C102</carId>
+                        
+        
+        <customerName>Admin</customerName>
+                        
+        
+        <licenseNumber>DL-1420110012345</licenseNumber>
+                        
+        
+        <days>1</days>
+                        
+        
+        <totalRent>1800.0</totalRent>
+                    
     
-    
-    
-    
-    
-    
+    </rental>
+        
 
-    
-
-    
-
-    
+    <rental>
+        <carId>C101</carId>
+        <customerName>Furkan</customerName>
+        <licenseNumber>4567890</licenseNumber>
+        <days>1</days>
+        <totalRent>2500.0</totalRent>
+    </rental>
 </rentals>
