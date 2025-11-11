@@ -96,6 +96,74 @@ Then open: `http://localhost:8080/CarRentalSystem/` (context name may vary by WA
 - If images are not showing: check `webapp/images/` contains the files listed in `cars.xml` and that image filenames match exactly (case-sensitive on Linux). The JSPs use `/images/<imageName>`.
 - If admin login fails: use the credentials above or edit `AdminServlet` / `web.xml` as described.
 
+## New: Quick Maven Run (Jetty Embedded)
+If you have Java (JDK 17+) and Maven installed, you can run the app immediately without installing Tomcat manually:
+
+```bash
+mvn jetty:run
+```
+Then open: http://localhost:8080/
+
+Troubleshooting:
+- If you see `command not found: mvn`, install Maven (see below).
+- If pages 404, ensure Jetty started successfully and no port conflicts.
+
+## macOS Setup Steps (No Tools Installed Yet)
+1. Install Homebrew (package manager):
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+2. Add Homebrew to your shell (follow on-screen output, typically):
+```bash
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+source ~/.zprofile
+```
+3. Install a JDK (Temurin / Eclipse Adoptium):
+```bash
+brew install temurin
+```
+4. Install Maven:
+```bash
+brew install maven
+```
+5. Verify:
+```bash
+java -version
+mvn -version
+```
+6. Run the app:
+```bash
+mvn jetty:run
+```
+
+## Provided Run Script
+You can also use the helper script:
+```bash
+./scripts/run-local.sh
+```
+This checks for Java/Maven and prints guidance if missing.
+
+## Fallback: Run Without Maven (Manual Tomcat Deploy)
+If you have Tomcat 10.x but no Maven:
+1. Download Tomcat 10 (Jakarta-based) from official site and extract (e.g., /opt/tomcat10).
+2. Compile sources into `webapp/WEB-INF/classes`:
+```bash
+mkdir -p webapp/WEB-INF/classes
+javac -d webapp/WEB-INF/classes $(find src -name '*.java')
+```
+3. (Optional) Remove any stale compiled classes.
+4. Start Tomcat:
+```bash
+/opt/tomcat10/bin/startup.sh
+```
+5. Deploy by copying the entire project directory into Tomcat `webapps/CarRentalSystem` OR build a WAR (requires Maven/IDE).
+6. Access: http://localhost:8080/CarRentalSystem/
+
+## Next Enhancements
+- Add Dockerfile for containerized runs (Tomcat base image).
+- Add integration tests for servlet endpoints.
+- Externalize admin credentials with environment variables or context params.
+
 ## License
 MIT — modify as you wish for learning/demos.
 
@@ -104,5 +172,3 @@ If you want, I can also:
 - Add a small `build.xml` (Ant) or `pom.xml` (Maven) to make building and creating a WAR straightforward.
 - Move admin credentials to `web.xml` context params and remove the hard-coded fallback (recommended).
 - Add README run commands customized for your Tomcat installation (tell me your Tomcat path).
-
-
